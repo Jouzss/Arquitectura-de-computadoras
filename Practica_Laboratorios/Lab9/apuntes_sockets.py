@@ -31,3 +31,15 @@
 # send():       Se usa con el servidor o el cliente. Se usa para enviar el paquete de información.
 
 # No son procesos en paralelo, cuando solicita algo, espera a que sea recibido para continuar.
+
+#################################################### Comandos útiles ####################################################
+
+# Para contar cuantas líneas hay: cantidad_filas = contenido.count('\n')
+# cuenta cuantos saltos de línea tengo en mi código, para esto debimos eliminar previamente el último salto de 
+# línea. contenido = contenido[:-1]
+
+# lista = contenido.split('\n') divide el csv en filas separadas por \n
+
+# d.get('comando') == 'corte'. En esta función busco en el diccionario dentro de comando y evaluo si
+# es igual a la palabra corte. voltaje_a = d.get('umbral') de aca sacamos el valor o palabra guardada
+# en umbral.
