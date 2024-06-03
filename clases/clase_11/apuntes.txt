@@ -1,0 +1,24 @@
+Apuntes:
+
+Concurrencia -> asyncio
+
+Manejo de interrupciones: la idea es que se define un evento por hardware que interrumpe el programa. El maestro da una exposicion de un tema en la clase. El alumno pregunta 
+
+Paralelismo: Dos ideas que no chocan o cuando dos tareas se realizan al mismo tiempo. Todas las operaciones ocurren totalmente a la vez.
+Traslape: Interseccion, cuando hay componentes de 2 tareas que son iguales
+Concurrencia: Es el traslape total o parcial de 2 o mas acciones.
+
+Cuando hablamos de Concurrencia no necesariamente hablamos de paralelismo.
+
+libreria asyncio. 
+
+Primero siempre vamos a llamar a un "import asyncio"
+
+asyncio viene en distintas formas y es una libreria que es utilizada por otras librerias. En otros casos puede que usemos más librerias que ya tienen implementado asyncio por detras
+asyncio es una operación de un solo hilo. Va a haber un solo bucle de operación, donde cada vez que llamemos una interrupción. 
+2 palabras reservadas importantes:
+- async: la bandera para poder identificar 
+- await: 
+
+await asyncio.sleep(n): Da un retardo de n segundos
+await asyncio.gather: ejecutar toda slas rutinas que coloque como coargumentos. bloquea el código y esperara a que todas las corrutinas terminen antes de seguir.
