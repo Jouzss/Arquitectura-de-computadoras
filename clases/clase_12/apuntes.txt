@@ -1,0 +1,27 @@
+Hoy toca hablar de multihilo. 
+
+asyncio.start_server
+
+callback: yo le digo al software, cuando ocurra cierto evento tu inmediatamente
+          llamas a esta función. 
+
+Entonces para usar start_server debemos definir un callback que va a manejar como
+debe comportarse un servidor cada vez que un cliente se conecte.
+
+Diferencia entre interrupción y callback es que interrupción cuando un evento
+físico ocurre. callback es una situación más de software. 
+
+Sistemas operativos: Tiene 2 niveles
+
+    espacio de usuario: aca corren los programas
+    kernel: es con lo que puedo interactucar con el sistema oeprativo a través
+            del hardware.
+
+Las operaciones asincronas por definición, ocurre solamente en un solo hilo de 
+ejecución. 
+
+Un proceso tiene dos espacios: Hilo de ejecución y un espacio de memoria.
+
+Tenemos el hilo principal y pueden salir subhilos de ejecución, que permitan
+realizar operaciones asincronas y luego volver al hilo principal.
+
