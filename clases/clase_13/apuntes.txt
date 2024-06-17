@@ -1,0 +1,12 @@
+Hilos en python no son paralelos. La implementación de hilos en python es concurrente no paralela, pero en otros lenguajes puede ser paralela.
+
+Hilos es similar a asyncio. Así que podemos usar los ambos para lograr lo mismo.
+
+Asyncio siempre opera en un solo hilo, ventajas:
+
+- No incrementa mucho la memoria
+- Al estar en el mismo hilo, las penalizaciones por inicializar una corrutina son minimas. En hilos hay una penalizacion adicional, porque crear hilos es costoso.
+
+¿Por qué existen los hilos?...
+    Los hilos aparecieron antes, por eso permanecen, sin embargo, asyncio es actualmente el más popular para usarse para realizar concurrencia.
+

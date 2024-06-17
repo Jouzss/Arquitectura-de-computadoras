@@ -1,0 +1,12 @@
+arr = [0, 1, 5, 6, 88]
+tupla = (0, 1, 5, 6, 88)
+var = 5
+
+for idx in range(var):
+    print(idx)
+
+for idx in range(var):
+    print(idx)
+
+for idx in range(var):
+    print(idx)
