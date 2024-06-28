@@ -22,6 +22,18 @@ def par_num_primos(n):
             if((n%i) == 0):
                 primo_2 = i
                 return [primo_1, primo_2]
+
+def find_prime_factors(n):
+    factors = []
+    for i in range(2, int(math.sqrt(n)) + 1):
+        while n % i == 0: 
+            factors.append(i)
+            n //= i
+        if n == 1:
+            break
+    if n > 1:
+        factors.append(n)
+    return list(set(factors))
                     
 if __name__ == '__main__':
 
